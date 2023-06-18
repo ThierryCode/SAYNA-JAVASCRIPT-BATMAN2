@@ -29,18 +29,28 @@
   background-color: rgba(196, 196, 196, 0.2823529412);
 }
 
-.header {
+.header, .headerGame {
   width: 100%;
   height: 100vh;
-  background-image: url(../assets/Illustrations/Bathome1.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   box-shadow: inset 0 0 8em 5em #000;
+}
+
+.header {
+  background-image: url(../assets/Illustrations/Bathome1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.headerGame {
+  background-image: url(../assets/Illustrations/Batgame_1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .menuLogo {
