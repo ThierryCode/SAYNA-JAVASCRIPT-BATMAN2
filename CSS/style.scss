@@ -548,4 +548,28 @@ footer {
 		}
 	}
 }
+$container-max-width: 1200px;
+$header-padding: 20px;
 
+.containerReplique {
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: $header-padding;
+  
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+    padding: 10px;
+  }
+  
+  @media screen and (max-width: 480px) {
+    max-width: 100%;
+    padding: 5px;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
