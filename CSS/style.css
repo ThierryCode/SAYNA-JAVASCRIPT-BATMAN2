@@ -630,5 +630,35 @@ footer {
     padding: 0;
   }
 }
+@media screen and (max-width: 1440px) {
+  .introButton {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .introButton {
+    width: 85%;
+    height: auto;
+  }
+  .introButton .intro {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+  }
+  .introButton .intro span {
+    margin: 5px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .introButton .boutons {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
