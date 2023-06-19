@@ -1,7 +1,7 @@
 {
   "name": "sayna-htmlcssjs-batman2",
   "version": "1.0.0",
-  "description": "",
+  "description": "Projet suite du projet BATMAN1 orienté sur l'initiation au javascript.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,5 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "sass": "^1.63.4"
-  }
+  },
+  "devDependencies": {}
 }
