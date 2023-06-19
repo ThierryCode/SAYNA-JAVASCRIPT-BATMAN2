@@ -582,4 +582,53 @@ footer {
   filter: brightness(0) saturate(100%) invert(88%) sepia(44%) saturate(1037%) hue-rotate(356deg) brightness(107%) contrast(106%);
 }
 
+@media screen and (max-width: 320px) {
+  .ligneGauche {
+    width: 2px;
+    height: 100%;
+    position: fixed;
+    left: 0%;
+    border-left: 4px solid rgba(196, 196, 196, 0.2823529412);
+  }
+  .ligneDroite {
+    width: 2px;
+    height: 100%;
+    position: fixed;
+    right: 0%;
+    border-left: 4px solid rgba(196, 196, 196, 0.2823529412);
+  }
+}
+@media screen and (max-width: 320px) {
+  .ligneGauche {
+    width: 2px;
+    height: 100%;
+    position: fixed;
+    left: 0%;
+    border-left: 4px solid rgba(196, 196, 196, 0.2823529412);
+  }
+  .ligneDroite {
+    width: 2px;
+    height: 100%;
+    position: fixed;
+    right: 0%;
+    border-left: 4px solid rgba(196, 196, 196, 0.2823529412);
+  }
+}
+@media screen and (max-width: 768px) {
+  .menuLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: start;
+  }
+  .logoHome, .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

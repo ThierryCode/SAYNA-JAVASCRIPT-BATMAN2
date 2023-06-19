@@ -30,3 +30,19 @@
         border-left: 4px solid rgba(196, 196, 196, 0.2823529412);
     }
 }
+@media screen and (max-width: 768px) {
+    .menuLogo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .logoHome, .menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+}
