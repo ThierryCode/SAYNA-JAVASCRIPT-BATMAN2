@@ -22,6 +22,7 @@
 	position: fixed;
 	right: 7.5%;
 	border-left: 4px solid rgba(196, 196, 196, 0.2823529412);
+    z-index: 999;
 }
 .header {
     width: 100%;
@@ -205,7 +206,7 @@
 	width: 200px;
 	top: 35%;
 	position: absolute;
-	z-index: 999;
+	z-index: 5;
 	height: auto;
 	height: auto;
 	display: flex;
@@ -292,11 +293,21 @@ h2 {
 	}
 }
 .imageBatarang {
-	transform: translate(-550px, 100px);
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    width: 100%;
+    padding-left: 30px;
+    img{
+        position: absolute;
+        left: 300px;
+    }
 }
 .imageBatman {
 	// transform: translate(725px, 100px);
     right: 0px;
+    margin-top: 20px;
+    position: absolute;
 }
 .multimedia {
 	width: 100%;

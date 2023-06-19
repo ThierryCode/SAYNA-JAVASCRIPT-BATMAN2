@@ -24,6 +24,7 @@
   position: fixed;
   right: 7.5%;
   border-left: 4px solid rgba(196, 196, 196, 0.2823529412);
+  z-index: 999;
 }
 
 .header {
@@ -209,7 +210,7 @@
   width: 200px;
   top: 35%;
   position: absolute;
-  z-index: 999;
+  z-index: 5;
   height: auto;
   height: auto;
   display: flex;
@@ -302,11 +303,21 @@ h2 {
 }
 
 .imageBatarang {
-  transform: translate(-550px, 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-left: 30px;
+}
+.imageBatarang img {
+  position: absolute;
+  left: 300px;
 }
 
 .imageBatman {
   right: 0px;
+  margin-top: 20px;
+  position: absolute;
 }
 
 .multimedia {
@@ -661,6 +672,59 @@ footer {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .carte .infoCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: auto;
+  }
+  .carte .infoCard img {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .carte .infoCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: auto;
+  }
+  .carte .infoCard p {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .carte {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: auto;
+  }
+  .contenu h2 {
+    padding: auto;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .contenu p.presentation {
+    width: 85%;
+    padding: 0 10%;
+    width: 85%;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: normal;
+    text-align: justify;
+    border-top: none;
+    border-bottom: none;
+    font-size: 22px;
+    font-family: "Space Grotesk";
+    margin-bottom: 50px;
   }
 }
 

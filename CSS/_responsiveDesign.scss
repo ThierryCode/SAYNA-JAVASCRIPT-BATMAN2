@@ -80,3 +80,63 @@
         }
     }
 }
+@media screen and (max-width : 1700px){
+    .carte{
+        .infoCard{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: auto;
+            img{
+                width: 300px;
+            }
+        }
+    }
+}
+@media screen and (max-width : 1600px){
+    .carte{
+        .infoCard{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: auto;
+            p{
+                font-size: 22px;
+            }
+        }
+    }
+}
+@media screen and (max-width : 1300px){
+    .carte{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: auto
+    }
+    .contenu{
+        h2{
+            padding: auto;
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+        p {
+            &.presentation {
+                width: 85%;
+                padding:0 10%;                width: 85%;
+                color: #ffffff;
+                font-size: 36px;
+                font-weight: normal;
+                text-align: justify;
+                border-top: none;
+                border-bottom: none;
+                font-size: 22px;
+                font-family: "Space Grotesk";
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
