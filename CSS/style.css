@@ -23,23 +23,14 @@
   border-left: 4px solid rgba(196, 196, 196, 0.2823529412);
 }
 
-.hr {
-  width: 85%;
-  height: 4px;
-  background-color: rgba(196, 196, 196, 0.2823529412);
-}
-
-.header, .headerGame {
+.header {
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   box-shadow: inset 0 0 8em 5em #000;
-}
-
-.header {
   background-image: url(../assets/Illustrations/Bathome1.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -61,6 +52,22 @@
   height: 250px;
   border-top: none;
   border-bottom: none;
+}
+
+.hr {
+  width: 85%;
+  height: 4px;
+  background-color: rgba(196, 196, 196, 0.2823529412);
+  position: relative;
+}
+
+.introButton {
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .logoHome {
@@ -573,31 +580,6 @@ footer {
 }
 .Icones img:hover {
   filter: brightness(0) saturate(100%) invert(88%) sepia(44%) saturate(1037%) hue-rotate(356deg) brightness(107%) contrast(106%);
-}
-
-.containerReplique {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-@media screen and (max-width: 768px) {
-  .containerReplique {
-    max-width: 100%;
-    padding: 10px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .containerReplique {
-    max-width: 100%;
-    padding: 5px;
-  }
-}
-
-.header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
