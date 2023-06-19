@@ -16,6 +16,9 @@
 }
 
 .ligneDroite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 2px;
   height: 100%;
   position: fixed;
@@ -204,7 +207,6 @@
 
 .icon {
   width: 200px;
-  right: 2.3%;
   top: 35%;
   position: absolute;
   z-index: 999;
@@ -642,15 +644,16 @@ footer {
     height: auto;
   }
   .introButton .intro {
-    width: 100%;
+    width: 90%;
     height: auto;
     padding: 20px 0;
+    text-align: center;
   }
   .introButton .intro span {
     margin: 5px;
   }
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 770px) {
   .introButton .boutons {
     width: 100%;
     padding: 0;

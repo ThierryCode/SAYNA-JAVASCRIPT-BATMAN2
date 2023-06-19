@@ -58,16 +58,17 @@
         height: auto;
         // background-color: aqua;
         .intro{
-            width: 100%;
+            width: 90%;
             height: auto;
             padding: 20px 0;
+            text-align: center;
             span{
                 margin: 5px;
             }
         }
         }
     }
-@media screen and (max-width : 760px){
+@media screen and (max-width : 770px){
     .introButton{
         .boutons{
             width: 100%;
