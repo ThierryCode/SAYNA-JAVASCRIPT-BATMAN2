@@ -1,0 +1,16 @@
+@media screen and (max-width:320px){
+    .ligneGauche {
+        width: 2px;
+        height: 100%;
+        position: fixed;
+        left: 0%;
+        border-left: 4px solid rgba(196, 196, 196, 0.2823529412);
+    }
+    .ligneDroite {
+        width: 2px;
+        height: 100%;
+        position: fixed;
+        right: 0%;
+        border-left: 4px solid rgba(196, 196, 196, 0.2823529412);
+    }
+}
