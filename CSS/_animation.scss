@@ -26,7 +26,7 @@
     }
 }
 .introButton{
-    position: absolute;
+    position: relative;
     left: -1000px;
     width: 80%;
 	height: 100vh;
@@ -54,5 +54,61 @@
         align-items: center;
         justify-content: center;
         flex-direction: column; /* Position finale */
+    }
+}
+.contenu{
+    h2{
+        animation-name: SlideContenuH2;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+        
+    }
+}
+@keyframes SlideContenuH2 {
+    0% {
+        position: absolute;
+        left: -1000px; /* Position initiale */
+    }
+    100% {
+        position: relative;
+        left: 0px;
+    }
+}
+.contenu{
+    .presentation{
+        animation-name: SlideContenuPresentation;
+        animation-duration: 3s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+        
+    }
+}
+@keyframes SlideContenuPresentation {
+    0% {
+        position: absolute;
+        right: -1000px; 
+        opacity: 0;/* Position initiale */
+
+    }
+    100% {
+        position: relative;
+        right: 0px;
+        opacity: 1;
+    }
+}
+.carte, form .boutons{
+    animation-name: ApparitionCarte;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes ApparitionCarte {
+    0% {
+        opacity: 0;/* Position initiale */
+
+    }
+    100% {
+        opacity: 1;
     }
 }
