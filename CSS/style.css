@@ -68,11 +68,6 @@
   padding: 0 150px;
 }
 
-.logoHome img:hover,
-.navIcon img:hover {
-  filter: brightness(0) saturate(100%) invert(88%) sepia(44%) saturate(1037%) hue-rotate(356deg) brightness(107%) contrast(106%);
-}
-
 .menu {
   width: 50%;
   height: 100%;
@@ -111,18 +106,6 @@
   display: block;
   margin: 0 0;
   width: 0%;
-  height: 2px;
-  background-color: #f1f1f1;
-  transition: all 0.2s ease-in-out;
-}
-.itemNav a:hover {
-  filter: brightness(0) saturate(100%) invert(88%) sepia(44%) saturate(1037%) hue-rotate(356deg) brightness(107%) contrast(106%);
-}
-.itemNav a:hover::after {
-  content: "";
-  display: block;
-  margin: 0 0;
-  width: 100%;
   height: 2px;
   background-color: #f1f1f1;
   transition: all 0.2s ease-in-out;
@@ -175,9 +158,6 @@
   border: none;
   margin: 0 30px 20px 30px;
   background: linear-gradient(273.81deg, rgba(137, 0, 8, 0.6) 0%, rgba(252, 232, 216, 0.4) 100%);
-}
-.boutons button:hover {
-  background: linear-gradient(273.81deg, #890008 0%, #fce8d8 100%);
 }
 .boutons a {
   font-family: "rajdhani", "sans-serif";
@@ -345,9 +325,6 @@ h2 {
   justify-content: center;
   border: 1px solid rgba(196, 196, 196, 0.2823529412);
   border-radius: 0 20px 20px 0;
-  background-image: linear-gradient(90deg, rgba(237, 222, 191, 0.4) 40%, rgba(25, 88, 125, 0.4) 100%);
-}
-.card:hover {
   background-image: linear-gradient(90deg, rgba(237, 222, 191, 0.4) 40%, rgba(25, 88, 125, 0.4) 100%);
 }
 
@@ -576,9 +553,6 @@ footer {
   justify-content: space-around;
   margin-bottom: 20px;
 }
-.Icones img:hover {
-  filter: brightness(0) saturate(100%) invert(88%) sepia(44%) saturate(1037%) hue-rotate(356deg) brightness(107%) contrast(106%);
-}
 
 .DisplayHidden {
   display: none;
@@ -640,7 +614,7 @@ footer {
 }
 @media screen and (max-width: 1180px) {
   .introButton {
-    width: 85%;
+    width: 100%;
     height: auto;
   }
   .introButton .intro {
@@ -908,6 +882,36 @@ footer {
   background-image: linear-gradient(90deg, rgba(237, 222, 191, 0.4) 40%, rgba(25, 88, 125, 0.4) 100%);
 }
 
+.boutons:hover {
+  background: linear-gradient(273.81deg, #890008 0%, #fce8d8 100%);
+}
+
+.itemNav:hover {
+  filter: brightness(0) saturate(100%) invert(88%) sepia(44%) saturate(1037%) hue-rotate(356deg) brightness(107%) contrast(106%);
+}
+.itemNav:hover::after {
+  content: "";
+  display: block;
+  margin: 0 0;
+  width: 100%;
+  height: 2px;
+  background-color: #f1f1f1;
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  background-image: linear-gradient(90deg, rgba(237, 222, 191, 0.4) 40%, rgba(25, 88, 125, 0.4) 100%);
+}
+
+.Icones img:hover {
+  filter: brightness(0) saturate(100%) invert(88%) sepia(44%) saturate(1037%) hue-rotate(356deg) brightness(107%) contrast(106%);
+}
+
+.logoHome img:hover,
+.navIcon img:hover {
+  filter: brightness(0) saturate(100%) invert(88%) sepia(44%) saturate(1037%) hue-rotate(356deg) brightness(107%) contrast(106%);
+}
+
 .introAnimation {
   position: absolute;
   left: -1000px;
@@ -957,7 +961,7 @@ footer {
   100% {
     position: relative;
     left: 0px;
-    width: 80%;
+    width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -1001,9 +1005,9 @@ footer {
     opacity: 1;
   }
 }
-.carte, form .boutons {
+.carte, form .boutons, .content {
   animation-name: ApparitionCarte;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }

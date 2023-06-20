@@ -62,11 +62,6 @@
 	justify-content: left;
 	padding: 0 150px;
 }
-.logoHome img:hover,
-.navIcon img:hover {
-	filter: brightness(0) saturate(100%) invert(88%) sepia(44%) saturate(1037%)
-    hue-rotate(356deg) brightness(107%) contrast(106%);
-}
 .menu {
 	width: 50%;
 	height: 100%;
@@ -107,19 +102,6 @@
 			height: 2px;
 			background-color: #f1f1f1;
 			transition: all 0.2s ease-in-out;
-		}
-		&:hover {
-			filter: brightness(0) saturate(100%) invert(88%) sepia(44%) saturate(1037%)
-    hue-rotate(356deg) brightness(107%) contrast(106%);
-			&::after {
-				content: "";
-				display: block;
-				margin: 0 0;
-				width: 100%;
-				height: 2px;
-				background-color: #f1f1f1;
-				transition: all 0.2s ease-in-out;
-			}
 		}
 	}
 	&.active {
@@ -174,9 +156,6 @@
     rgba(137, 0, 8, 0.6) 0%,
     rgba(252, 232, 216, 0.4) 100%
   );
-		&:hover {
-			background: linear-gradient(273.81deg, #890008 0%, #fce8d8 100%);
-		}
 	}
 	a {
 		font-family: "rajdhani", "sans-serif";
@@ -339,13 +318,6 @@ h2 {
     rgba(237, 222, 191, 0.4) 40%,
     rgba(25, 88, 125, 0.4) 100%
   );
-	&:hover {
-		background-image: linear-gradient(
-    90deg,
-    rgba(237, 222, 191, 0.4) 40%,
-    rgba(25, 88, 125, 0.4) 100%
-  );
-	}
 }
 .imagecard {
 	width: 100%;
@@ -562,12 +534,6 @@ footer {
 	flex-direction: row;
 	justify-content: space-around;
 	margin-bottom: 20px;
-	img {
-		&:hover {
-			filter: brightness(0) saturate(100%) invert(88%) sepia(44%) saturate(1037%)
-    hue-rotate(356deg) brightness(107%) contrast(106%);
-		}
-	}
 }
 .DisplayHidden{
 	display:none;
