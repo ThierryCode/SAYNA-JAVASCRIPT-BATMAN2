@@ -251,6 +251,30 @@ h2 {
 .infoCard img {
   width: 100%;
 }
+.infoCard .Actors .infosActors {
+  height: 74px;
+  width: 254px;
+  left: 242px;
+  top: 1845px;
+  border-radius: 50px;
+  background: linear-gradient(273.81deg, rgba(137, 0, 8, 0.6) 0%, rgba(252, 232, 216, 0.4) 100%);
+}
+.infoCard .Actors .infosActors .nom {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 13px;
+  letter-spacing: -0.4079999924px;
+  text-align: center;
+}
+.infoCard .Actors .infosActors .date {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: -0.4079999924px;
+  text-align: center;
+}
 .infoCard p {
   font-family: "rajdhani", "sans-serif";
   text-align: center;
