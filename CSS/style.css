@@ -58,15 +58,6 @@
   position: relative;
 }
 
-.introButton {
-  width: 80%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
 .logoHome {
   width: 50%;
   height: 100%;
@@ -898,6 +889,77 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
+}
+
+.introAnimation .introTextAnimation {
+  display: block;
+  font-family: "Rajdhani";
+  line-height: 50%;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 66px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.introAnimation {
+  position: absolute;
+  left: -1000px;
+  top: 331px;
+  width: 20%;
+  height: 20vh;
+  padding: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Animation */
+  animation-name: SlideGameIntro;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes SlideGameIntro {
+  0% {
+    left: -1000px;
+    top: 10px; /* Position initiale */
+  }
+  100% {
+    left: 350px; /* Position finale */
+  }
+}
+.introButton {
+  position: absolute;
+  left: -1000px;
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* Animation */
+  animation-name: SlideintroButton;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes SlideintroButton {
+  0% {
+    left: -1000px; /* Position initiale */
+  }
+  100% {
+    position: relative;
+    left: 0px;
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Position finale */
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
