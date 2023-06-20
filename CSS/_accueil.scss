@@ -408,7 +408,7 @@ h2 {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	position: absolute;
+	position: relative;
 	z-index: 999;
 	width: 100%;
 	height: auto;
@@ -494,7 +494,7 @@ label {
 }
 .containerReplique {
 	width: 60%;
-	height: 60%;
+	height: 60vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;

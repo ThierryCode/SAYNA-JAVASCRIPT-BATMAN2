@@ -418,7 +418,7 @@ h2 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  position: absolute;
+  position: relative;
   z-index: 999;
   width: 100%;
   height: auto;
@@ -502,7 +502,7 @@ label {
 
 .containerReplique {
   width: 60%;
-  height: 60%;
+  height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -832,6 +832,64 @@ footer {
   }
   h2 {
     font-size: 18px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .repliquePhrase {
+    width: 100%;
+    padding-right: 0;
+  }
+  .guillemetDroite {
+    padding-bottom: 0px;
+    padding-top: 400px;
+  }
+  .guillemetDroite img {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 750px) {
+  .repliquePhrase {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 725px) {
+  .guillemetGauche img, .guillemetDroite img {
+    width: 50px;
+  }
+}
+@media screen and (max-width: 645px) {
+  .containerReplique {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .guillemetDroite {
+    padding-bottom: 0px;
+    padding-top: 20px;
+  }
+  .guillemetDroite img {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 650px) {
+  .warnerBrosLastPara {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .warnerBrosLastPara p {
+    width: 80%;
+    display: block;
+    text-align: center;
   }
 }
 
