@@ -15,14 +15,14 @@
 }
 .ligneDroite {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 	width: 2px;
 	height: 100%;
 	position: fixed;
 	right: 7.5%;
 	border-left: 4px solid rgba(196, 196, 196, 0.2823529412);
-    z-index: 999;
+	z-index: 999;
 }
 .header {
     width: 100%;
@@ -408,8 +408,8 @@ h2 {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	position: relative;
-	z-index: 99;
+	position: absolute;
+	z-index: 999;
 	width: 100%;
 	height: auto;
 	border-top: 3px solid rgb(34, 37, 21);
@@ -426,6 +426,7 @@ h2 {
   );
 	h2 {
 		text-align: center;
+		display: block;
 	}
 }
 form {
@@ -580,4 +581,7 @@ footer {
     hue-rotate(356deg) brightness(107%) contrast(106%);
 		}
 	}
+}
+.DisplayHidden{
+	display:none;
 }
