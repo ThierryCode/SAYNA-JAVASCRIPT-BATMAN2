@@ -1,0 +1,13 @@
+.headerGame{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: column;
+	box-shadow: inset 0 0 8em 5em #000;
+    background-image: url(../assets/Illustrations/Batgame_1.png);	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right;
+}
