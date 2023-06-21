@@ -423,10 +423,21 @@ h2 {
 
 .imgJusticeLeag {
   width: 100%;
-  height: auto;
+  max-height: 800px;
+  position: relative;
 }
-.imgJusticeLeag img {
+.imgJusticeLeag .slideShow {
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.imgJusticeLeag .slideShow.activeSlide {
+  opacity: 1;
 }
 
 .imageBatarang {

@@ -41,3 +41,21 @@ window.addEventListener('scroll', ()=> {
     
 });
 //fin animation fait avec javascript
+//Slide de la section cinema (image league des justicier)
+let currentIndex = 0;
+let slideImages = document.querySelectorAll('.imgJusticeLeag .slideShow');
+
+function showImage(index) {
+  for (var i = 0; i < slideImages.length; i++) {
+    slideImages[i].classList.remove('activeSlide');
+  }
+
+  slideImages[index].classList.add('activeSlide');
+}
+
+function slideNext() {
+  currentIndex = (currentIndex + 1) % slideImages.length;
+  showImage(currentIndex);
+}
+
+setInterval(slideNext, 3000);
