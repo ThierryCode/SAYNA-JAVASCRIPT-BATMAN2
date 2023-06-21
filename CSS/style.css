@@ -96,6 +96,7 @@
   position: fixed;
   left: 7.5%;
   border-left: 4px solid rgba(196, 196, 196, 0.2823529412);
+  z-index: 999;
 }
 
 .ligneDroite {
@@ -423,7 +424,7 @@ h2 {
 
 .imgJusticeLeag {
   width: 100%;
-  max-height: 800px;
+  height: auto;
   position: relative;
 }
 .imgJusticeLeag .slideShow {
@@ -459,6 +460,7 @@ h2 {
 }
 
 .multimedia {
+  padding-top: 730px;
   width: 100%;
   height: auto;
   background-color: #000000;
@@ -1024,6 +1026,26 @@ footer {
     width: 80%;
     display: block;
     text-align: center;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .multimedia {
+    padding-top: 630px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .multimedia {
+    padding-top: 430px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .multimedia {
+    padding-top: 330px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .multimedia {
+    padding-top: 130px;
   }
 }
 .headerGame {

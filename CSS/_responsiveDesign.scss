@@ -310,3 +310,19 @@
         text-align: center;
     }
 }
+@media screen and (max-width : 1440px){
+    .multimedia {
+        padding-top: 630px;}
+}
+@media screen and (max-width : 1024px){
+    .multimedia {
+        padding-top: 430px;}
+}
+@media screen and (max-width : 768px){
+    .multimedia {
+        padding-top: 330px;}
+}
+@media screen and (max-width : 425px){
+    .multimedia {
+        padding-top: 130px;}
+}
