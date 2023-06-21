@@ -238,60 +238,103 @@ h2 {
 	justify-content: space-between;
 	padding: 100px;
 }
-.infoCard1 {
-	width: 400px;
-	height: 600px;
+.infoCard {
+	width: 300px;
+	height: 450px;
 	border: 5px solid;
 	border-image: linear-gradient(45deg, #eddebf, #19587d) 10;
 	background-color: transparent;
-	background-image: url(../assets/Illustrations/Bathome2.png);
 	background-size: cover;
 	background-repeat: no-repeat;
-	.Actors{
-		margin-top: 442px;
-		height: 150px;
-		border: 2px solid;
-		border-image: linear-gradient(45deg, #eddebf, #19587d) 10;
-		background: linear-gradient(45deg, #17140F, #17140F),linear-gradient(97.59deg, #746D5F 0%, #1D313B 99.83%);
+	
+	.Actors {
+	  display: none; /* Masquer par défaut */
+	  width: 100%;
+	  margin-top: 442px;
+	  height: 150px;
+	  border: 4px solid;
+	  border-image: linear-gradient(45deg, rgba(237, 222, 191, 0.5), rgba(25, 88, 125, 0.5)) 10;
+	  background: linear-gradient(45deg, rgba(23, 20, 15, 0.5), rgba(23, 20, 15, 0.5)),
+		linear-gradient(97.59deg, rgba(116, 109, 95, 0.5) 0%, rgba(29, 49, 59, 0.5) 99.83%);
+	  align-items: center;
+	  justify-content: center;
+	  position: relative;
+	
+	  .imgActor img {
+		width: 90px;
+		position: absolute;
+		top: 10px;
+		left: 15px;
+		border-radius: 50%;
+	  }
+	
+	  .infosActors {
+		height: 74px;
+		width: 254px;
+		left: 242px;
+		top: 1845px;
+		border-radius: 50px;
+		background: linear-gradient(273.81deg, rgba(137, 0, 8, 0.6) 0%, rgba(252, 232, 216, 0.4) 100%);
 		display: flex;
+		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		.imgActor img{
-			width: 90px;
-
+		.nom {
+		  font-family: "Roboto";
+		  font-size: 12px;
+		  font-weight: 700;
+		  line-height: 50%;
+		  letter-spacing: -0.5px;
+		  text-align: center;
 		}
-		.infosActors{
-			height: 74px;
-			width: 254px;
-			left: 242px;
-			top: 1845px;
-			border-radius: 50px;
-			background: linear-gradient(273.81deg, rgba(137, 0, 8, 0.6) 0%, rgba(252, 232, 216, 0.4) 100%);
-			.nom{
-				font-family: "Roboto";
-				font-size: 20px;
-				font-weight: 700;
-				line-height: 50%;
-				letter-spacing: -0.40799999237060547px;
-				text-align: center;
-			}
-			.date{
-				font-family: "Roboto";
-				font-size: 20px;
-				font-weight: 700;
-				line-height: 50%;
-				letter-spacing: -0.40799999237060547px;
-				text-align: center;
-			}
+	
+		.date {
+		  font-family: "Roboto";
+		  font-size: 12px;
+		  font-weight: 700;
+		  line-height: 50%;
+		  letter-spacing: -0.5px;
+		  text-align: center;
+		  margin-top: 10px;
+		  color: #F9D493;
 		}
+	  }
 	}
+	
 	p {
-		font-family: "rajdhani", "sans-serif";
-		text-align: center;
-		color: #ffffff;
-		font-size: 30px;
+	  font-family: "rajdhani", "sans-serif";
+	  text-align: center;
+	  color: #ffffff;
+	  font-size: 30px;
 	}
-}
+  }
+  .infoCard1 {
+	background-image: url(../assets/Illustrations/Bathome2.png);
+  }
+  .infoCard2 {
+	background-image: url(../assets/Illustrations/Bathome3.png);
+  }
+  .infoCard3 {
+	background-image: url(../assets/Illustrations/Bathome4.png);
+  }
+  .infoCard4 {
+	background-image: url(../assets/Illustrations/Bathome5.png);
+  }
+  .infoCard5 {
+	background-image: url(../assets/Illustrations/Bathome6.png);
+  }
+  .infoCard6 {
+	background-image: url(../assets/Illustrations/Bathome7.png);
+  }
+  .infoCard7 {
+	background-image: url(../assets/Illustrations/Bathome9.png);
+  }
+  .infoCard8 {
+	background-image: url(../assets/Illustrations/Bathome8.png);
+  }
+  .infoCard9 {
+	background-image: url(../assets/Illustrations/Bathome10.png);
+  }
 .imgJusticeLeag {
 	width: 100%;
 	height: auto;

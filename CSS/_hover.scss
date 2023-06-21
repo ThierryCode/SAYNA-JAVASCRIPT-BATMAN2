@@ -46,3 +46,10 @@
 	filter: brightness(0) saturate(100%) invert(88%) sepia(44%) saturate(1037%)
     hue-rotate(356deg) brightness(107%) contrast(106%);
 }
+.infoCard:hover {
+  width: 400px;
+	height: 600px;
+  .Actors {
+  display: flex; /* Afficher lors du survol */
+  }
+}
