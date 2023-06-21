@@ -137,7 +137,6 @@
 	}
 }
 .boutons {
-	width: 85%;
 	height: auto;
 	display: flex;
 	align-items: center;
@@ -229,14 +228,8 @@ h2 {
 	text-transform: uppercase;
 }
 .carte {
+	display:none;
 	width: 85%;
-	height: auto;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: row;
-	justify-content: space-between;
-	padding: 100px;
 }
 .infoCard {
 	width: 300px;

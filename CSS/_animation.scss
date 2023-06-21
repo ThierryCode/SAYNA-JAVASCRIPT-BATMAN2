@@ -57,7 +57,11 @@
     }
 }
 .contenu{
-    h2{
+    .titleH2{
+        position: absolute;
+        left: -1000px; /* Position initiale */
+    }
+    .h2Animation{
         animation-name: SlideContenuH2;
         animation-duration: 1s;
         animation-timing-function: ease-out;
@@ -76,9 +80,14 @@
     }
 }
 .contenu{
-    .presentation{
+    p.presentation{
+        position: absolute;
+        right: -0.1px; 
+        opacity: 0;/* Position initiale */
+    }
+    .presentationAnim{
         animation-name: SlideContenuPresentation;
-        animation-duration: 3s;
+        animation-duration: 1s;
         animation-timing-function: ease-out;
         animation-fill-mode: forwards;
         
@@ -97,9 +106,17 @@
         opacity: 1;
     }
 }
-.carte, form .boutons, .content{
+.carteAnim{
+    display: block;
+    height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	// flex-direction: row;
+	justify-content: space-between;
+	padding: 100px;
     animation-name: ApparitionCarte;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }

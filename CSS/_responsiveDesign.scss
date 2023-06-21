@@ -217,6 +217,11 @@
         text-align-last: center;
     }
 }
+@media screen and (max-width : 489px){
+    h2{
+        font-size: 18px;
+    }
+}
 @media screen and (max-width : 435px){
     .FormulaireDeContact{
         padding: 0px;
@@ -245,9 +250,6 @@
         width: 100%;
         margin: 0;
         padding: 0;
-    }
-    h2{
-        font-size: 18px;
     }
 }
 @media screen and (max-width : 1440px){

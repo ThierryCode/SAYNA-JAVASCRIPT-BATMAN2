@@ -7,8 +7,10 @@
   );
 }}
 .boutons{
-  &:hover {
-    background: linear-gradient(273.81deg, #890008 0%, #fce8d8 100%);
+  button{
+    &:hover {
+      background: linear-gradient(273.81deg, #890008 0%, #fce8d8 100%);
+    }
   }
 }
 .itemNav{

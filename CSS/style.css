@@ -225,7 +225,6 @@
 }
 
 .boutons {
-  width: 85%;
   height: auto;
   display: flex;
   align-items: center;
@@ -317,14 +316,8 @@ h2 {
 }
 
 .carte {
+  display: none;
   width: 85%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 100px;
 }
 
 .infoCard {
@@ -929,6 +922,11 @@ footer {
     text-align-last: center;
   }
 }
+@media screen and (max-width: 489px) {
+  h2 {
+    font-size: 18px;
+  }
+}
 @media screen and (max-width: 435px) {
   .FormulaireDeContact {
     padding: 0px;
@@ -957,9 +955,6 @@ footer {
     width: 100%;
     margin: 0;
     padding: 0;
-  }
-  h2 {
-    font-size: 18px;
   }
 }
 @media screen and (max-width: 1440px) {
@@ -1052,7 +1047,7 @@ footer {
   background-image: linear-gradient(90deg, rgba(237, 222, 191, 0.4) 40%, rgba(25, 88, 125, 0.4) 100%);
 }
 
-.boutons:hover {
+.boutons button:hover {
   background: linear-gradient(273.81deg, #890008 0%, #fce8d8 100%);
 }
 
@@ -1147,7 +1142,11 @@ footer {
     flex-direction: column; /* Position finale */
   }
 }
-.contenu h2 {
+.contenu .titleH2 {
+  position: absolute;
+  left: -1000px; /* Position initiale */
+}
+.contenu .h2Animation {
   animation-name: SlideContenuH2;
   animation-duration: 1s;
   animation-timing-function: ease-out;
@@ -1164,9 +1163,14 @@ footer {
     left: 0px;
   }
 }
-.contenu .presentation {
+.contenu p.presentation {
+  position: absolute;
+  right: -0.1px;
+  opacity: 0; /* Position initiale */
+}
+.contenu .presentationAnim {
   animation-name: SlideContenuPresentation;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
@@ -1183,9 +1187,16 @@ footer {
     opacity: 1;
   }
 }
-.carte, form .boutons, .content {
+.carteAnim {
+  display: block;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 100px;
   animation-name: ApparitionCarte;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
