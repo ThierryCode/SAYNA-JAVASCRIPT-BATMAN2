@@ -33,7 +33,7 @@
 .contenu{
     .titleH2{
         position: absolute;
-        left: -1000px; /* Position initiale */
+        left: -1000px;
     }
     .h2Animation{
         animation-name: SlideContenuH2;
@@ -45,10 +45,12 @@
 }
 @keyframes SlideContenuH2 {
     0% {
+        /* Position initiale */
         position: absolute;
-        left: -1000px; /* Position initiale */
+        left: -1000px; 
     }
     100% {
+        /* Position finale */
         position: relative;
         left: 0px;
     }
@@ -128,6 +130,55 @@
         /* Position initiale */
     }
     100% {
-        left: 350px; /* Position finale */
+        left: 350px;
+    }
+}
+.quiz .titleGameH2 {
+    position: absolute;
+    left: -1000px;
+}
+
+.h2GameAnimation {
+    animation-name: SlideQuizH2;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes SlideQuizH2 {
+    0% {
+        position: absolute;
+        top:400px;
+        left: -1000px; /* Position initiale */
+    }
+    100% {
+        /* Position finale */
+        position: relative;
+        left: 0px;
+        opacity: 1;
+    }
+}
+.quiz .imgGameBat {
+    position: absolute;
+}
+
+.scallimgGameBat {
+    animation-name: batscall;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes batscall {
+    0% {
+        position: relative;
+        transform: scale(1.2);
+ /* Position initiale */
+    }
+    100% {
+        /* Position finale */
+        position: relative;
+        transform: scale(1);
+        opacity: 1;
     }
 }

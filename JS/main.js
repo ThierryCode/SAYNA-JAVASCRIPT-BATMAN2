@@ -11,8 +11,11 @@ window.addEventListener('scroll', ()=> {
     const carte1 = document.querySelector('.carte1')
     const carte2 = document.querySelector('.carte2')
     const carte3 = document.querySelector('.carte3')
+    const titleGameH21 = document.querySelector('.titleGameH21');
+
     const scrollPosition = window.scrollY;
-   // console.log(scrollPosition);
+   console.log(scrollPosition);
+   console.log(titleGameH21);
     if (scrollPosition > 300) {
         title_h2_1.classList.add('h2Animation');
         presentation1.classList.add('presentationAnim');
@@ -38,7 +41,9 @@ window.addEventListener('scroll', ()=> {
         title_h2_4.classList.add('h2Animation');
         presentation4.classList.add('presentationAnim');
     }
-    
+    if (scrollPosition > 700) {
+        titleGameH21.classList.add('h2GameAnimation');
+    }
 });
 //fin animation fait avec javascript
 //Slide de la section cinema (image league des justicier)
@@ -72,9 +77,4 @@ popUp.addEventListener("click", (e) => {
     popUp.classList.remove("active");
     e.preventDefault();
 });
-
-//Javascript pour le game
-//Animation à l'intro de la page game
-const titleGame_h2_2 = document.querySelector('.titleGame_h2_2');
-
 
