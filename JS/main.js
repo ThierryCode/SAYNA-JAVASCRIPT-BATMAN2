@@ -59,3 +59,11 @@ function slideNext() {
 }
 
 setInterval(slideNext, 3000);
+//Message popUp formulaire
+
+const submitBtn = document.querySelector(".submitBtn");
+const popUp = document.querySelector(".popUp");
+
+submitBtn.addEventListener("click", function() {
+    popUp.classList.add("popUpActive");
+});
