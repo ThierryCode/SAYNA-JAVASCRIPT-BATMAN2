@@ -12,7 +12,7 @@ window.addEventListener('scroll', ()=> {
     const carte2 = document.querySelector('.carte2')
     const carte3 = document.querySelector('.carte3')
     const scrollPosition = window.scrollY;
-    console.log(scrollPosition);
+   // console.log(scrollPosition);
     if (scrollPosition > 300) {
         title_h2_1.classList.add('h2Animation');
         presentation1.classList.add('presentationAnim');
@@ -72,3 +72,9 @@ popUp.addEventListener("click", (e) => {
     popUp.classList.remove("active");
     e.preventDefault();
 });
+
+//Javascript pour le game
+//Animation à l'intro de la page game
+const titleGame_h2_2 = document.querySelector('.titleGame_h2_2');
+
+

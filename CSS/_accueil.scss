@@ -144,6 +144,7 @@
 	justify-content: center;
 	border-top: none;
 	border-bottom: none;
+	cursor: pointer;
 	button {
 		color: #f1f1f1;
 		line-height: 100%;
@@ -661,11 +662,14 @@ footer {
 		  );
 		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 	}
-	p {
-		font-family: "Rajdhani";
-		font-size: 22px;
-		color: rgba(255, 255, 255, 1);
-
+	p{
+		color: #f1f1f1;
+		font-size: 36px;
+		line-height: 100px;
+		text-align: start;
+		font-family: "rajdhani", "sans-serif";
+		font-weight: medium;
+		text-transform: uppercase;
 	}
 		
 }
