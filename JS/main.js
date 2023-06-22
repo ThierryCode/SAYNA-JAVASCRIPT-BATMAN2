@@ -64,6 +64,11 @@ setInterval(slideNext, 3000);
 const submitBtn = document.querySelector(".submitBtn");
 const popUp = document.querySelector(".popUp");
 
-submitBtn.addEventListener("click", function() {
-    popUp.classList.add("popUpActive");
+submitBtn.addEventListener("click", (e) => {
+    popUp.classList.add("active");
+    e.preventDefault();
+});
+popUp.addEventListener("click", (e) => {
+    popUp.classList.remove("active");
+    e.preventDefault();
 });
