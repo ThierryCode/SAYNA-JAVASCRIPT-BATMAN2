@@ -194,10 +194,11 @@
 
 @keyframes ButtonAnim {
     0% {
-        position: relative;
+        display:none;
     }
     100% {
         /* Position finale */
+        display: block;
         position: relative;
         opacity: 1;
     }

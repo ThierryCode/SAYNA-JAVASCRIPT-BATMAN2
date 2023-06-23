@@ -1173,12 +1173,32 @@ footer {
   width: 543px;
   height: 48px;
   border: 1px;
-  background: rgb(255, 255, 255);
+  background: rgb(196, 196, 196);
   margin-bottom: 5px;
-  text-align: center;
-  line-height: 50%;
+  text-align: justify;
+  margin-top: 20px;
+  padding-left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-family: "Space Grotesk";
+  font-size: 18px;
+  line-height: 28px;
+  color: rgb(255, 255, 255);
+  color: #ffffff;
 }
-.quiz .question {
+.quiz li input {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+.quiz li label {
+  height: 36px;
+  width: 400px;
+  font-size: 30px;
+  line-height: 18px;
+}
+.quiz .question-container {
   margin-top: 20%;
   display: flex;
   align-items: center;
@@ -1186,7 +1206,7 @@ footer {
   flex-direction: column;
   padding: auto;
 }
-.quiz .question button {
+.quiz .question-container button {
   bottom: 50px;
   width: 300px;
   height: 80px;
@@ -1434,10 +1454,11 @@ footer {
 
 @keyframes ButtonAnim {
   0% {
-    position: relative;
+    display: none;
   }
   100% {
     /* Position finale */
+    display: block;
     position: relative;
     opacity: 1;
   }
