@@ -148,7 +148,6 @@
 @keyframes SlideQuizH2 {
     0% {
         position: absolute;
-        top:400px;
         left: -1000px; /* Position initiale */
     }
     100% {
@@ -179,6 +178,27 @@
         /* Position finale */
         position: relative;
         transform: scale(1);
+        opacity: 1;
+    }
+}
+.quiz .boutonGame {
+    position: absolute;
+}
+
+.animBoutonGame {
+    animation-name: ButtonAnim;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ButtonAnim {
+    0% {
+        position: relative;
+    }
+    100% {
+        /* Position finale */
+        position: relative;
         opacity: 1;
     }
 }

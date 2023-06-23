@@ -1138,6 +1138,7 @@ footer {
   opacity: 0;
 }
 .quiz .boutonGame {
+  opacity: 0;
   bottom: 50px;
   width: 300px;
   height: 80px;
@@ -1151,6 +1152,50 @@ footer {
 .quiz .boutonGame button {
   border: none;
   background-color: transparent;
+  text-transform: uppercase;
+  font-family: "rajdhani", "sans-serif";
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 50px;
+  font-size: 30px;
+  color: #ffffff;
+}
+.quiz h3 {
+  font-family: "Space Grotesk";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: justified;
+  color: #ffffff;
+}
+.quiz li {
+  width: 543px;
+  height: 48px;
+  border: 1px;
+  background: rgb(255, 255, 255);
+  margin-bottom: 5px;
+  text-align: center;
+  line-height: 50%;
+}
+.quiz .question {
+  margin-top: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: auto;
+}
+.quiz .question button {
+  bottom: 50px;
+  width: 300px;
+  height: 80px;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(273.81deg, #C06F28 0%, rgba(252, 232, 216, 0.4) 100%);
   text-transform: uppercase;
   font-family: "rajdhani", "sans-serif";
   text-decoration: none;
@@ -1343,7 +1388,6 @@ footer {
 @keyframes SlideQuizH2 {
   0% {
     position: absolute;
-    top: 400px;
     left: -1000px; /* Position initiale */
   }
   100% {
@@ -1374,6 +1418,27 @@ footer {
     /* Position finale */
     position: relative;
     transform: scale(1);
+    opacity: 1;
+  }
+}
+.quiz .boutonGame {
+  position: absolute;
+}
+
+.animBoutonGame {
+  animation-name: ButtonAnim;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ButtonAnim {
+  0% {
+    position: relative;
+  }
+  100% {
+    /* Position finale */
+    position: relative;
     opacity: 1;
   }
 }
