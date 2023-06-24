@@ -1134,7 +1134,7 @@ footer {
   text-align: center;
 }
 .quiz .imgGameBat {
-  position: relative;
+  position: absolute;
   opacity: 0;
 }
 .quiz .boutonGame {
@@ -1499,10 +1499,6 @@ h3 {
     opacity: 1;
   }
 }
-.quiz .boutonGame {
-  position: absolute;
-}
-
 .animBoutonGame {
   animation-name: ButtonAnim;
   animation-duration: 3s;
