@@ -1252,6 +1252,7 @@ h3 {
 .popupActive .popup-title {
   text-decoration: underline;
   bottom: 20px;
+  width: 100%;
 }
 .popupActive .popup-text {
   display: block;
