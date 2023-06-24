@@ -117,7 +117,7 @@ popupDiv.appendChild(popupTitle);
 popupDiv.appendChild(popupText);
 popupDiv.appendChild(popupButton);
 document.body.appendChild(popupDiv);
-
+//resultat a afficher dans le popUp
 if (score >= 10) {
   popupTitle.textContent = score + '/12 Bravo!';
   popupText.textContent =
@@ -146,14 +146,14 @@ const questionDiv = document.querySelector('.question-container');
 questionDiv.remove();
 
 if (questionIndex >= questions.length) {
-  const score = calculerScore(); // Appel à la fonction calculerScore
+  const score = calculerScore(); //fonction calculerScore
   afficherPopup(score);
 } else {
   afficherQuestion();
 }
 }
 
-// Nouvelle fonction pour calculer le score
+// Fonction pour calculer le score
 function calculerScore() {
 let score = 0;
 const questionContainers = document.querySelectorAll('.question-container');
