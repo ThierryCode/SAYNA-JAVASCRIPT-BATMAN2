@@ -101,7 +101,7 @@ fetch('https://batman-api.sayna.space/questions?fbclid=IwAR2j0VY3PGd0Y_FLZygi9ep
 // Affichage du popup
 function afficherPopup(score) {
 const popupDiv = document.createElement('div');
-popupDiv.classList.add('popup');
+popupDiv.classList.add('popupActive');
 
 const popupTitle = document.createElement('h2');
 popupTitle.classList.add('popup-title');

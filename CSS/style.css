@@ -1232,24 +1232,28 @@ h3 {
 }
 
 .popup {
+  display: none;
+}
+
+.popupActive {
   background: linear-gradient(130deg, rgb(0, 0, 0) 1.67%, rgb(192, 111, 40) 99.96%); /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
   width: 40%;
   height: 50vh;
-  position: fixed;
+  position: absolute;
   left: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   justify-content: space-around;
-  top: 30vh;
+  top: 140vh;
   border-radius: 5px;
 }
-.popup .popup-title {
+.popupActive .popup-title {
   text-decoration: underline;
   bottom: 20px;
 }
-.popup .popup-text {
+.popupActive .popup-text {
   display: block;
   font-family: "Rajdhani";
   font-weight: 500;
@@ -1260,7 +1264,7 @@ h3 {
   color: #ffffff;
   bottom: 20px;
 }
-.popup button {
+.popupActive button {
   bottom: 50px;
   width: 300px;
   height: 80px;
